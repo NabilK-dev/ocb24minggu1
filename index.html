@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takaful Consultant - Landing Page</title>
+    <title>Takaful Landing Page</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,101 +14,137 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
         header {
-            background-color: #0077b6;
+            background-color: #0f9d58;
             color: #fff;
-            padding: 20px 10px;
+            padding: 20px;
             text-align: center;
         }
-        section {
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        /* Services Section */
+        .services {
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
-        h1, h2 {
-            color: #0077b6;
+
+        .services h2 {
+            color: #0f9d58;
         }
-        .services ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .services ul li {
-            background: #e3f2fd;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        form {
+
+        .service-cards {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
         }
-        form label {
-            margin-bottom: 5px;
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 0;
+            padding: 15px;
+            background-color: #f1f1f1;
+            color: #0f9d58;
+        }
+
+        .card p {
+            padding: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #0f9d58;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #0f9d58;
+            color: #fff;
+            border-radius: 5px;
             font-weight: bold;
         }
-        form input, form textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+
+        .contact a:hover {
+            background-color: #0b7e47;
         }
-        form button {
-            padding: 10px;
-            background-color: #0077b6;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #005f8d;
-        }
+
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #0077b6;
+            background-color: #0f9d58;
             color: #fff;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Takaful Consultant Page</h1>
-        <p>Your trusted advisor for financial protection and planning</p>
+        <h1>Welcome to Takaful Malaysia by Nabil Financial Advisor Representative</h1>
+        <p>Protect What Matters Most</p>
     </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Hello! I’m Muhammad Nabil Khairi Bin Hasan, a professional Takaful Consultant. I am dedicated to helping individuals and families achieve financial security through Takaful solutions. Whether you're planning for your family, your health, or your retirement, I’m here to guide you every step of the way.</p>
-    </section>
+
     <section class="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Family Takaful Plans</li>
-            <li>Medical Card</li>
-        </ul>
+        <h2>Our Takaful Products</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="https://files.oaiusercontent.com/file-Y4XUho5oCS9Ko8qS8E66QY?se=2024-11-28T14%3A46%3A09Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Db63b24ca-b6a3-4663-a099-4f021a989aaf.webp&sig=CYSD5d9FoDwMggh/2fjOkgWMeDOaIUWsh1vNWseEH4U%3D" alt="Takaful Car">
+                <h3>Takaful Car</h3>
+                <p>Comprehensive car protection with value-added benefits for you and your family.</p>
+            </div>
+            <div class="card">
+                <img src="https://files.oaiusercontent.com/file-5kUR688ehDv7oo5rxLqceE?se=2024-11-28T14%3A49%3A48Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbffeb5ca-f8cb-471d-a072-def5670b323d.webp&sig=eqErJTv2dk6koPvQMYSU1dVP9xoONQp7i0D%2Bbgp5/yU%3D" alt="Takaful Hibah">
+                <h3>Takaful Hibah</h3>
+                <p>Takaful Hibah is a financial protection plan that provides immediate funds to your loved ones in the event of your passing. It ensures your family’s financial stability by offering a lump sum payout without going through complicated inheritance processes.</p>
+            </div>
+            <div class="card">
+                <img src="https://files.oaiusercontent.com/file-8SsLbREfYGd9dntCzcuQGy?se=2024-11-28T14%3A52%3A24Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D008998ce-4404-4bf2-b5d1-824bea76c2c6.webp&sig=QX%2BidKTcy9fhCTH1JjH%2Bt/gazm2K5xp/2U/kuA0A7Pc%3D" alt="Takaful Medical Card">
+                <h3>Takaful Medical Card</h3>
+                <p>A Medical Card is a health insurance product offered by Takaful providers to help individuals and families manage medical expenses. It provides coverage for hospitalization, surgery, and other medical treatments, ensuring financial protection during unexpected health-related events.</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h2>Contact Me</h2>
-        <form action="#">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Have questions or need assistance? Contact us now!</p>
+        <a href="#">Call Us</a>
+        <a href="#">Email Us</a>
+        <a href="#">Visit Our Portal</a>
     </section>
+
     <footer>
-        <p>© 2024 Muhammad Nabil Khairi - Takaful Consultant</p>
+        <p>&copy; 2024 Takaful Malaysia by Nabil Financial Advisor Representative. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
